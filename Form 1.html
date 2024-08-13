@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 1</title>
+    <style>
+        body {
+            width: 400px;
+        }
+        form {
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+            <h2>ОСТАВЬТЕ ВАШИ КОНТАКТЫ</h2>
+            <p>Имя</p>
+            <input type="text" name="name" placeholder="Vasya" max="15" size="30">
+            <p>Телефон</p>
+            <!--Add phone validation-->
+            <!-- pattern="\+7-\d{3}-\d{3}-\d{2}-\d{2} -->
+            <input type="tel" name="tel" value="+7" max="12" size="30">
+            <p>Почта</p>
+            <input type="email" name="email" placeholder="pupkin@mail.ru" max="18" size="30">
+            <p><button>Запросить цену</button></p>
+        </form>
+    </div>
+</body>
+</html>
